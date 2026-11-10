@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/(?:reunimos|inspire_mono|wasm_design_utils|adrive|shore_icon|teambition)/?",
+      "dest": "/index.html"
+    },
+    { "src": "/.*", "dest": "/index.html", "status": 404 }
+  ]
+}
